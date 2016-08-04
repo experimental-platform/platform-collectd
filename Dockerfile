@@ -16,4 +16,5 @@ RUN pip install -r requirements.txt
 COPY collectd.conf /etc/collectd/collectd.conf
 COPY docker.conf /etc/collectd/collectd.conf.d/docker.conf
 COPY interface.conf /etc/collectd/collectd.conf.d/interface.conf
+COPY rrdtool.conf /etc/collectd/collectd.conf.d/rrdtool.conf
 
