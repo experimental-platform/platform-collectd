@@ -18,3 +18,5 @@ COPY docker.conf /etc/collectd/collectd.conf.d/docker.conf
 COPY interface.conf /etc/collectd/collectd.conf.d/interface.conf
 COPY rrdtool.conf /etc/collectd/collectd.conf.d/rrdtool.conf
 
+CMD ["/usr/sbin/collectd", "-f"]
+
