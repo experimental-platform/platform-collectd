@@ -13,6 +13,7 @@ RUN git checkout c3edc64555f35d8ffcc9aee23b69c289e8f309fb
 RUN pip install wheel
 RUN pip install -r requirements.txt
 
-COPY docker.conf /etc/collectd/collectd.conf.d/docker.conf
 COPY collectd.conf /etc/collectd/collectd.conf
+COPY docker.conf /etc/collectd/collectd.conf.d/docker.conf
+COPY interface.conf /etc/collectd/collectd.conf.d/interface.conf
 
