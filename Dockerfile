@@ -7,9 +7,9 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/lebauce/docker-collectd-plugin /opt/docker-collectd-plugin
+RUN git clone https://github.com/hinnerk/docker-collectd-plugin.git /opt/docker-collectd-plugin
 WORKDIR /opt/docker-collectd-plugin
-RUN git checkout c3edc64555f35d8ffcc9aee23b69c289e8f309fb
+RUN git checkout fix-timestamp
 RUN pip install wheel
 RUN pip install -r requirements.txt
 
